@@ -1,0 +1,56 @@
+$logoText: 5em;
+$logoWeight: 900;
+$sloganSize: 3em;
+$shadow: 1 1 1 1;
+
+.icon {
+    fill: currentColor;
+    display: inline-block;
+    font-size: inherit;
+    height: 1em;
+    overflow: visible;
+    vertical-align: -.125em;
+}
+
+.--minus-top {
+    margin-top: .1em;
+    padding-top: 0;
+}
+.header {
+
+    &::after {
+        content: "";
+        height: 100%;
+        background-image: url("./images/stock/startup.jpg");
+        opacity: 0.1;
+        top: 0;
+        left: 0;
+        bottom: 0;
+        right: 0;
+        position: absolute;
+        z-index: -1;
+        background-size: contain;
+        background-repeat: no-repeat;
+    }
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+
+    &__text {
+        padding: 1em 0 0 1em;
+        font-size: $logoText;
+        font-weight: $logoWeight;
+
+        .empresa {
+            color: #3AC173;
+        }
+    }
+    &__slogan {
+        padding: 1.5em 0 0 1.5em;
+        font-size: $sloganSize;
+    }
+}
+
+.content {
+    margin: 9em 0 0 0;
+}
