@@ -14,7 +14,7 @@
                 <div class="d-flex flex-row-reverse">
                     <div class="p-2">
                         @guest
-                        <button type="submit" class="btn large btn-outline-success btn-lg align-top"  
+                        <button dusk="consult" type="submit" class="btn large btn-outline-success btn-lg align-top"  
                         data-toggle="modal" data-target="#exampleModal" id="schedule">FREE CONSULTATION</button>
                         @endguest
                     </div>

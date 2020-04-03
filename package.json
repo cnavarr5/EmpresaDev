@@ -7,22 +7,36 @@
         "watch-poll": "npm run watch -- --watch-poll",
         "hot": "cross-env NODE_ENV=development node_modules/webpack-dev-server/bin/webpack-dev-server.js --inline --hot --config=node_modules/laravel-mix/setup/webpack.config.js",
         "prod": "npm run production",
-        "production": "cross-env NODE_ENV=production node_modules/webpack/bin/webpack.js --no-progress --hide-modules --config=node_modules/laravel-mix/setup/webpack.config.js"
+        "production": "cross-env NODE_ENV=production node_modules/webpack/bin/webpack.js --no-progress --hide-modules --config=node_modules/laravel-mix/setup/webpack.config.js",
+        "test": "mochapack --webpack-config=node_modules/laravel-mix/setup/webpack.config.js --require tests/Frontend/setup.js tests/js/\\*\\*/\\*.spec.js"
     },
     "devDependencies": {
         "@mdi/font": "^5.0.45",
+        "@vue/test-utils": "^1.0.0-beta.32",
         "axios": "^0.19.2",
         "bootstrap": "^4.0.0",
+        "bufferutil": "^4.0.1",
+        "canvas": "^2.6.1",
         "cross-env": "^7.0",
+        "expect": "^25.2.7",
         "jquery": "^3.2",
+        "jsdom": "^16.2.2",
+        "jsdom-global": "^3.0.2",
         "laravel-mix": "^5.0.1",
         "lodash": "^4.17.13",
+        "mocha": "^6.1.1",
+        "mochapack": "^1.1.13",
+        "node-sass": "^4.13.1",
         "popper.js": "^1.12",
         "resolve-url-loader": "^2.3.1",
         "sass": "^1.20.1",
         "sass-loader": "^8.0.0",
+        "utf-8-validate": "^5.0.2",
         "vue": "^2.6.0",
-        "vue-template-compiler": "^2.6.10"
+        "vue-template-compiler": "^2.6.11",
+        "webpack": "^4.42.1"
     },
-    "dependencies": {}
+    "dependencies": {
+        "fibers": "^3.1.1"
+    }
 }
