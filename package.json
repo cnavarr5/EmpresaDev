@@ -13,7 +13,7 @@
     "devDependencies": {
         "@mdi/font": "^5.0.45",
         "@vue/test-utils": "^1.0.0-beta.32",
-        "axios": "^0.19.2",
+        "axios": "^0.21.1",
         "bootstrap": "^4.0.0",
         "bufferutil": "^4.0.1",
         "canvas": "^2.6.1",
